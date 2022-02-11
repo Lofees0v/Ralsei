@@ -1,0 +1,22 @@
+{
+    "type": "origins:damage_over_time",
+    "name": "Karma",
+    "description": "You die if you reach zero xp",
+    "condition": {
+        "type": "origins:xp_points",
+        "inverted": false,
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "interval": 1,
+    "damage": 999999,
+    "protection_effectiveness": 1,
+    "damage_source": {
+        "bypasses_armor": true,
+        "fire": false,
+        "unblockable": true,
+        "magic": false,
+        "out_of_world": false,
+        "name": "thorns"
+    }
+}

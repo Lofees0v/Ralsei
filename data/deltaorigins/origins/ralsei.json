@@ -1,0 +1,18 @@
+{
+    "impact": 3,
+    "unchoosable": false,
+    "name": "Ralsei",
+    "description": "Welcome. I am the Prince of this Kingdom... The KINGDOM OF DARKNESS.\n\nRalsei is a young prince looking to fulfill an ancient prophecy. They believe there's a peaceful way to solve every problem.",
+    "powers": [
+        "deltaorigins:heal_prayer",
+		"deltaorigins:fluffyguard",
+        "deltaorigins:pacifist",
+        "deltaorigins:young",
+        "deltaorigins:fluffy",
+        "deltaorigins:xpgain",
+        "deltaorigins:karma",
+        "deltaorigins:startwith1xp"
+    ],
+    "icon": "turtle_helmet",
+    "order": -999999999
+}

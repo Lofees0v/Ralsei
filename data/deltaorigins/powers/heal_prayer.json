@@ -1,0 +1,40 @@
+{
+    "type": "origins:active_self",
+    "name": "Heal Prayer",
+    "description": "For 5 xp levels, you can heal everyone around you, friend or foe, by pressing your primary",
+    "condition": {
+        "type": "origins:xp_levels",
+        "inverted": false,
+        "comparison": ">",
+        "compare_to": 2
+    },
+    "cooldown": 1200,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_xp",
+                "levels": -5
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "/effect give @e[distance=..5] minecraft:instant_health 1 2"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "/execute at @s positioned ~ ~2 ~ run function deltaorigins:heart"
+            }
+        ]
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 9
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

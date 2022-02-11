@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "origins": [
+        "deltaorigins:ralsei" ],
+    "auto_choose": false,
+    "allow_random": false,
+    "enabled": true,
+    "allow_random_unchoosable": false
+}

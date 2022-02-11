@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Young",
+    "description": "being young and small, you have only 8 hearts.",
+    "modifier": {
+        "operation": "addition",
+        "value": -4,
+        "attribute": "generic.max_health"
+    }
+}

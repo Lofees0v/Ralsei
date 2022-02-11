@@ -1,0 +1,35 @@
+{
+    "type": "origins:active_self",
+    "name": "Fluffy guard",
+    "description": "For 5 xp levels, you can give everyone resistance I for 30 seconds, friend or foe, by pressing your secondary",
+    "condition": {
+        "type": "origins:xp_levels",
+        "inverted": false,
+        "comparison": ">",
+        "compare_to": 2
+    },
+    "cooldown": 1200,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_xp",
+                "levels": -5
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "/effect give @e[distance=..5] minecraft:resistance 30 0"
+            }
+        ]
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 1
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    }
+}

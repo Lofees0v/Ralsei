@@ -1,0 +1,10 @@
+{
+    "type": "origins:self_action_on_hit",
+    "name": "Pacifist",
+    "cooldown": 1,
+    "entity_action": {
+        "type": "origins:add_xp",
+        "levels": -1
+    },
+    "description": "You could hardly stand the thought of hurting a possible friend, causing you to loose xp if you ever do."
+}

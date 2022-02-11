@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Tension Points",
+    "description": "You get a passive xp gain, which caps out at 30",
+    "condition": {
+        "type": "origins:xp_levels",
+        "inverted": false,
+        "comparison": "<",
+        "compare_to": 30
+    },
+    "interval": 100,
+    "entity_action": {
+        "type": "origins:add_xp",
+        "points": 3
+    }
+}
